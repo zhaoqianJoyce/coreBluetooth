@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9055F5F1F2F29C50088120C /* ZQBlueToothMachineDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9055F5E1F2F29C50088120C /* ZQBlueToothMachineDetailViewController.m */; };
 		E9D481B91F137B7900CD28BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D481B81F137B7900CD28BF /* main.m */; };
 		E9D481BC1F137B7900CD28BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D481BB1F137B7900CD28BF /* AppDelegate.m */; };
 		E9D481BF1F137B7900CD28BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D481BE1F137B7900CD28BF /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9055F5D1F2F29C50088120C /* ZQBlueToothMachineDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQBlueToothMachineDetailViewController.h; sourceTree = "<group>"; };
+		E9055F5E1F2F29C50088120C /* ZQBlueToothMachineDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQBlueToothMachineDetailViewController.m; sourceTree = "<group>"; };
 		E9D481B41F137B7900CD28BF /* coreBluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coreBluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D481B81F137B7900CD28BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9D481BA1F137B7900CD28BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				E9D481BB1F137B7900CD28BF /* AppDelegate.m */,
 				E9D481BD1F137B7900CD28BF /* ViewController.h */,
 				E9D481BE1F137B7900CD28BF /* ViewController.m */,
+				E9055F5D1F2F29C50088120C /* ZQBlueToothMachineDetailViewController.h */,
+				E9055F5E1F2F29C50088120C /* ZQBlueToothMachineDetailViewController.m */,
 				E9D481C01F137B7900CD28BF /* Main.storyboard */,
 				E9D481C31F137B7900CD28BF /* Assets.xcassets */,
 				E9D481C51F137B7900CD28BF /* LaunchScreen.storyboard */,
@@ -110,6 +115,7 @@
 				TargetAttributes = {
 					E9D481B31F137B7900CD28BF = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = E4DD4RMMBF;
 					};
 				};
 			};
@@ -152,6 +158,7 @@
 				E9D481BF1F137B7900CD28BF /* ViewController.m in Sources */,
 				E9D481BC1F137B7900CD28BF /* AppDelegate.m in Sources */,
 				E9D481B91F137B7900CD28BF /* main.m in Sources */,
+				E9055F5F1F2F29C50088120C /* ZQBlueToothMachineDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +268,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = coreBluetooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.person.coreBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -272,10 +283,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = coreBluetooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.person.coreBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -298,6 +313,7 @@
 				E9D481CD1F137B7900CD28BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
